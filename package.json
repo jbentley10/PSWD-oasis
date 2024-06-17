@@ -1,5 +1,5 @@
 {
-  "name": "static-site-template",
+  "name": "pswd-design-system",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,7 +9,7 @@
     "lint": "next lint",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "chromatic": "npx chromatic --project-token=chpt_32aed1821426117"
+    "chromatic": "npx chromatic --project-token=chpt_8cb18907b5e4289"
   },
   "dependencies": {
     "@contentful/rich-text-react-renderer": "^15.21.2",
@@ -29,6 +29,9 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
+    "@babel/cli": "^7.24.7",
+    "@babel/core": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
     "@chromatic-com/storybook": "^1.5.0",
     "@storybook/addon-essentials": "^8.1.9",
     "@storybook/addon-interactions": "^8.1.9",
