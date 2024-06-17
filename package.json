@@ -9,7 +9,7 @@
     "lint": "next lint",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "chromatic": "npx chromatic --project-token=chpt_8cb18907b5e4289"
+    "chromatic": "npx chromatic --project-token=chpt_8cb18907b5e4289 --only-changed"
   },
   "dependencies": {
     "@contentful/rich-text-react-renderer": "^15.21.2",
