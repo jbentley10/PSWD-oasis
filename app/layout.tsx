@@ -4,7 +4,7 @@
 "use client";
 
 // Import styles
-import "./globals.css";
+import "../src/globals.css";
 
 // Import dependencies
 import React from "react";

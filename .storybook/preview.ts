@@ -1,5 +1,5 @@
 import type { Preview } from "@storybook/react";
-import '../app/globals.css'; // Adjust the path according to your project structure
+import '../src/globals.css'; // Adjust the path according to your project structure
 
 import { withThemeByClassName } from '@storybook/addon-themes';
 
