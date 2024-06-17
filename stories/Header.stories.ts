@@ -1,8 +1,16 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta as MetaType, StoryObj } from '@storybook/react';
 import { fn } from '@storybook/test';
 import { Header } from './Header';
 
-const meta = {
+// Define a new type that extends the Meta type from @storybook/react
+type Meta<T> = MetaType<T> & {
+  argTypes: {
+    backgroundColor: { control: 'color' };
+  };
+};
+
+// Modify the meta object to use the new Meta type
+const meta: Meta<typeof Header> = {
   title: 'Example/Header',
   component: Header,
   // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
@@ -16,7 +24,10 @@ const meta = {
     onLogout: fn(),
     onCreateAccount: fn(),
   },
-} satisfies Meta<typeof Header>;
+  argTypes: {
+    backgroundColor: { control: 'color' }
+  }
+};
 
 export default meta;
 type Story = StoryObj<typeof meta>;
