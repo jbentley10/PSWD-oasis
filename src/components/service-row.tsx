@@ -1,4 +1,5 @@
 import { FaHouseChimney } from "react-icons/fa6";
+import React from 'react';
 
 export default function ServiceRow(props: {
   heading1: string;

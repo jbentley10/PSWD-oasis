@@ -2,6 +2,8 @@
  * @file page.tsx
  */
 
+import React from 'react';
+
 // Set metadata
 export const metadata = {
   title: 'Home | Example app',
