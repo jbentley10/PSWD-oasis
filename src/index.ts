@@ -1,4 +1,5 @@
 // src/index.ts
+import './globals.css';
 
 /* Unique Components */ 
 export { default as Footer } from './components/footer';

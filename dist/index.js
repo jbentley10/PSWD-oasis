@@ -39,6 +39,7 @@ Object.defineProperty(exports, "ThemeProvider", {
     return _themeProvider["default"];
   }
 });
+require("./globals.css");
 var _footer = _interopRequireDefault(require("./components/footer"));
 var _hero = _interopRequireDefault(require("./components/hero"));
 var _navigation = _interopRequireDefault(require("./components/navigation"));
