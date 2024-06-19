@@ -17,6 +17,12 @@ const config = {
         "2xl": "1400px",
       },
     },
+    screens: {
+      'sm': '320px',
+      'md': '600px',
+      'lg': '840px',
+      'xl': '1380px',
+    },
     extend: {
       colors: {
         border: "hsl(var(--border))",
