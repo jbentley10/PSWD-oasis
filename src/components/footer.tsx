@@ -28,20 +28,20 @@ export default function Footer() {
             <h2 className={footerHeadingStyles}>Services</h2>
             <ul>
               {[
-                ['Service 1', '/#'],
-                ['Service 2', '/#'],
-                ['Service 3', '/#'],
-              ].map(([text, href]) => (
-                <li>Service 1</li>
+                ['Service 1'],
+                ['Service 2'],
+                ['Service 3'],
+              ].map(([text]) => (
+                <li>{text}</li>
               ))}
             </ul>
           </div>
           <div className="flex flex-col max-w-48 w-full xs:mb-8">
             <h2 className={footerHeadingStyles}>Contact</h2>
             <ul>
-              <li>{process.env.NEXT_PUBLIC_CLIENT_ADDRESS}</li>
-              <li><Link href="tel:+15555555555">{process.env.NEXT_PUBLIC_CLIENT_PHONE}</Link></li>
-              <li><Link href="mailto:email@me.com">{process.env.NEXT_PUBLIC_CLIENT_EMAIL}</Link></li>
+              <li className="lg:mb-2">123 Fake Street, Fakesville, CA 99999</li>
+              <li className="lg:mb-2"><Link href="tel:+15555555555">(555) 555-5555</Link></li>
+              <li className="lg:mb-2"><Link href="mailto:email@me.com">Fake Name &lt;email@me.com&gt;</Link></li>
             </ul>
           </div>
         </div>
