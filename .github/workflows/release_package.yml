@@ -54,16 +54,11 @@ jobs:
         env:
           RELEASE_TYPE: ${{ github.event.inputs.release-type }}
 
-      - name: Get absolute path to CHANGELOG.md
-        id: get-changelog-path
-        run: |
-          echo "::set-output name=path::$(pwd)/CHANGELOG.md"
-
       # Update changelog unreleased section with new version
       - name: Update changelog
         uses: superfaceai/release-changelog-action@v1
         with:
-          path-to-changelog: ./CHANGELOG.md
+          path-to-changelog: path: ./.github/workflows/CHANGELOG.md
           version: ${{ env.NEW_VERSION }}
           operation: release
 
