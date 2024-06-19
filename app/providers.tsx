@@ -2,7 +2,6 @@
 'use client'
 
 import React from 'react'
-import { ChakraProvider } from '@chakra-ui/react'
 import ThemeProvider from "@/src/components/theme-provider";
 
 export function Providers({ children }: { children: React.ReactNode }) {
@@ -13,10 +12,8 @@ export function Providers({ children }: { children: React.ReactNode }) {
       enableSystem
       disableTransitionOnChange
     >
-      <ChakraProvider>
 
-        {children}
-      </ChakraProvider>
+      {children}
     </ThemeProvider>
   )
 }
