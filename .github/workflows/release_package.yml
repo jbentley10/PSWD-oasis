@@ -56,9 +56,9 @@ jobs:
 
       # Update changelog unreleased section with new version
       - name: Update changelog
-        uses: superfaceai/release-changelog-action@v1
+        uses: superfaceai/release-changelog-action@v2
         with:
-          path-to-changelog: path: ./CHANGELOG.md
+          path-to-changelog: path: CHANGELOG.md
           version: ${{ env.NEW_VERSION }}
           operation: release
 
