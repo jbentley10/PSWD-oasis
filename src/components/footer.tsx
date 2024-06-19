@@ -5,9 +5,9 @@ import React from "react";
 export default function Footer() {
   return (
     <footer>
-      <div className="bg-secondary--foreground flex flex-row pt-24 pb-24">
+      <div className="bg-secondary--foreground flex flex-row pt-24 pb-24 lg:px-12">
         <div className="w-1/2">
-          <Image src="/logo.svg" width="500" height="315" alt="Company logo"/>
+          <Image src="/logo.svg" width="500" height="315" alt="Company logo" />
         </div>
         <div className="w-1/2 pt-16 flex flex-wrap flex-row">
           <div className="flex flex-col max-w-48 w-full">

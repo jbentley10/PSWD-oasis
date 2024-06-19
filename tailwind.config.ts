@@ -7,7 +7,7 @@ const config = {
     './src/components/**/*.{ts,tsx}',
     './src/components/*.{ts,tsx}',
     './app/*.{ts,tsx}',
-	],
+  ],
   prefix: "",
   theme: {
     container: {
@@ -18,6 +18,7 @@ const config = {
       },
     },
     screens: {
+      'xs': '0px',
       'sm': '320px',
       'md': '600px',
       'lg': '840px',
