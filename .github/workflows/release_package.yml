@@ -9,6 +9,10 @@ jobs:
   release:
     runs-on: ubuntu-latest
     steps:
+      - name: Enable verbose logging
+        run: |
+          echo "::set-output name=RUNNER_DEBUG_RUNNER_OUTPUT::1"
+
       # Checkout project repository
       - name: Checkout
         uses: actions/checkout@v3
@@ -49,6 +53,11 @@ jobs:
           echo "RELEASE_TAG=beta" >> $GITHUB_ENV
         env:
           RELEASE_TYPE: ${{ github.event.inputs.release-type }}
+
+      - name: Get absolute path to CHANGELOG.md
+        id: get-changelog-path
+        run: |
+          echo "::set-output name=path::$(pwd)/CHANGELOG.md"
 
       # Update changelog unreleased section with new version
       - name: Update changelog
