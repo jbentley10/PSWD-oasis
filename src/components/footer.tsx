@@ -20,7 +20,7 @@ export default function Footer() {
                 ['Link 2', '/#'],
                 ['Link 3', '/#'],
               ].map(([text, href]) => (
-                <li><Link href={href}>{text}</Link></li>
+                <li key={text}><Link href={href}>{text}</Link></li>
               ))}
             </ul>
           </div>
@@ -32,7 +32,7 @@ export default function Footer() {
                 ['Service 2'],
                 ['Service 3'],
               ].map(([text]) => (
-                <li>{text}</li>
+                <li key={text}>{text}</li>
               ))}
             </ul>
           </div>
