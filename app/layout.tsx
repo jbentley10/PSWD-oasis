@@ -7,7 +7,7 @@
 import "../src/globals.css";
 
 // Import dependencies
-import * as React from "react";
+import React from "react";
 
 // Import components and utils
 import Navigation from "@/src/components/navigation";

@@ -1,7 +1,7 @@
 /**
  * @file page.tsx
  */
-import * as React from "react";
+import React from "react";
 
 // Set metadata
 export const metadata = {
@@ -9,7 +9,7 @@ export const metadata = {
   description: "This app uses NextJS and Contentful.",
 };
 
-export default async function Home() {
+export default function Home() {
   return (
     <main className='flex flex-col items-center justify-between lg:p-24 xs:p-4'>
       <div>Ready!</div>

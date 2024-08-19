@@ -1,7 +1,7 @@
 // app/providers.tsx
 "use client";
 
-import * as React from "react";
+import React from "react";
 import ThemeProvider from "@/src/components/theme-provider";
 
 export function Providers({ children }: { children: React.ReactNode }) {
