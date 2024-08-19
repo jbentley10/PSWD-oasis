@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", {
 exports["default"] = void 0;
 var _react = _interopRequireDefault(require("react"));
 var _image = _interopRequireDefault(require("next/image"));
-var _links = require("@/src/components/ui/links");
+var _links = require("./ui/links");
 var _link = _interopRequireDefault(require("next/link"));
 function _interopRequireDefault(e) { return e && e.__esModule ? e : { "default": e }; }
 var Navigation = function Navigation() {

@@ -1,4 +1,4 @@
-import { renderDocument } from "@/src/lib/renderDocument";
+import { renderDocument } from "../lib/renderDocument";
 import Image from "next/image";
 import React from "react";
 

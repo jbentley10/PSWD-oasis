@@ -21,10 +21,10 @@ Object.defineProperty(exports, "DividerText", {
     return _dividerText["default"];
   }
 });
-Object.defineProperty(exports, "FloatingActionButton", {
+Object.defineProperty(exports, "Footer", {
   enumerable: true,
   get: function get() {
-    return _floatingActionButton["default"];
+    return _footer["default"];
   }
 });
 Object.defineProperty(exports, "Heading", {
@@ -54,10 +54,10 @@ Object.defineProperty(exports, "Navigation", {
 require("./globals.css");
 var _callToAction = _interopRequireDefault(require("./components/call-to-action"));
 var _dividerText = _interopRequireDefault(require("./components/divider-text"));
-var _floatingActionButton = _interopRequireDefault(require("./components/floating-action-button"));
 var _heading = _interopRequireDefault(require("./components/heading"));
 var _hero = _interopRequireDefault(require("./components/hero"));
 var _imageTextBlock = _interopRequireDefault(require("./components/image-text-block"));
 var _navigation = _interopRequireDefault(require("./components/navigation"));
+var _footer = _interopRequireDefault(require("./components/footer"));
 var _button = require("./components/ui/button");
 function _interopRequireDefault(e) { return e && e.__esModule ? e : { "default": e }; }
