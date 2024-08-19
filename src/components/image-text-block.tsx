@@ -1,6 +1,6 @@
 import { renderDocument } from "@/src/lib/renderDocument";
 import Image from "next/image";
-import * as React from "react";
+import React from "react";
 
 export interface ImageTextBlockProps {
   image: {

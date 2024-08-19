@@ -3,7 +3,7 @@
  * @see https://v0.dev/t/uZWnofwD6qr
  * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
  */
-import * as React from "react";
+import React from "react";
 import Link from "next/link";
 import { Button } from "./ui/button";
 import Image from "next/image";

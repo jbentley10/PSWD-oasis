@@ -4,7 +4,7 @@
 "use client";
 
 // Import dependencies
-import * as React from "react";
+import React from "react";
 import { useLocale } from "../lib/locale-provider";
 import { GrLanguage } from "react-icons/gr";
 import { Button } from "./ui/button";

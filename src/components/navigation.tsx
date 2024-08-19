@@ -1,3 +1,4 @@
+import React from "react";
 import Image from "next/image";
 import { Links } from "@/src/components/ui/links";
 import Link from "next/link";
