@@ -7,21 +7,20 @@
 import "../src/globals.css";
 
 // Import dependencies
-import React from "react";
+import * as React from "react";
 
 // Import components and utils
 import Navigation from "@/src/components/navigation";
 import Footer from "@/src/components/footer";
-import { Providers } from './providers'
+import { Providers } from "./providers";
 
 export default function RootLayout({
-  children
+  children,
 }: {
   children: React.ReactNode;
 }) {
-
   return (
-    <html lang="en">
+    <html lang='en'>
       <body>
         <Providers>
           <Navigation />
