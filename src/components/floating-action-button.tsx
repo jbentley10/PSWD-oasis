@@ -1,7 +1,7 @@
+"use client";
 /**
  * @file floating-action-button.tsx
  */
-"use client";
 
 // Import dependencies
 import React from "react";
