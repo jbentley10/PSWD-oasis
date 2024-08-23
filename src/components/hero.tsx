@@ -15,7 +15,7 @@ export interface HeroProps {
   buttonText: string;
 }
 
-const Hero: React.FC<HeroProps> = ({
+export const Hero: React.FC<HeroProps> = ({
   heading,
   subheading,
   buttonLink,
@@ -48,5 +48,3 @@ const Hero: React.FC<HeroProps> = ({
     </section>
   );
 };
-
-export default Hero;

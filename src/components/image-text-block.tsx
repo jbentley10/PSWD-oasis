@@ -16,7 +16,7 @@ export interface ImageTextBlockProps {
   imageOnLeft: boolean;
 }
 
-const ImageTextBlock: React.FC<ImageTextBlockProps> = ({
+export const ImageTextBlock: React.FC<ImageTextBlockProps> = ({
   image,
   heading,
   subtext,
@@ -46,5 +46,3 @@ const ImageTextBlock: React.FC<ImageTextBlockProps> = ({
     </section>
   );
 };
-
-export default ImageTextBlock;

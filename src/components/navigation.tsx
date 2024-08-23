@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Links } from "./ui/links";
 import Link from "next/link";
 
-const Navigation = () => {
+export const Navigation = () => {
   return (
     <nav className='atf-container sm:pt-10 md:pt-11 m-0 bg-nav drop-shadow flex flex-col md:flex-row items-center justify-between xs:justify-end'>
       <section className='w-full md:w-1/2' id='logo'>
@@ -22,5 +22,3 @@ const Navigation = () => {
     </nav>
   );
 };
-
-export default Navigation;

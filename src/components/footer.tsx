@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Links } from "./ui/links";
 
-export default function Footer() {
+export const Footer = () => {
   return (
     <footer
       className={

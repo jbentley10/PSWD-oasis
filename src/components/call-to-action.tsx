@@ -9,7 +9,7 @@ export interface CallToActionProps {
   buttonLink: string;
 }
 
-const CallToAction: React.FC<CallToActionProps> = ({
+export const CallToAction: React.FC<CallToActionProps> = ({
   heading,
   subheading,
   buttonText,
@@ -33,5 +33,3 @@ const CallToAction: React.FC<CallToActionProps> = ({
     </div>
   );
 };
-
-export default CallToAction;

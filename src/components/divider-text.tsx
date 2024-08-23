@@ -13,5 +13,3 @@ export const DividerText: React.FC<DividerTextProps> = ({ text }) => {
     </div>
   );
 };
-
-export default DividerText;

@@ -9,7 +9,7 @@ import { useLocale } from "../lib/locale-provider";
 import { GrLanguage } from "react-icons/gr";
 import { Button } from "./ui/button";
 
-const FloatingActionButton: React.FC = () => {
+export const FloatingActionButton: React.FC = () => {
   const { isEnglish, setIsEnglish } = useLocale();
 
   return (
@@ -30,5 +30,3 @@ const FloatingActionButton: React.FC = () => {
     </div>
   );
 };
-
-export default FloatingActionButton;
