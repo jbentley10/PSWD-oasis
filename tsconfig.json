@@ -2,8 +2,11 @@
   "compilerOptions": {
     "target": "es6",
     "module": "esnext",
-    "lib": ["dom", "esnext"],
-    "jsx": "react",
+    "lib": [
+      "dom",
+      "esnext"
+    ],
+    "jsx": "preserve",
     "declaration": true,
     "declarationDir": "dist",
     "emitDeclarationOnly": false,
@@ -11,8 +14,25 @@
     "moduleResolution": "node",
     "esModuleInterop": true,
     "outDir": "dist",
-    "rootDir": "src"
+    "rootDir": "src",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "incremental": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "noEmit": true
   },
-  "include": ["src"],
-  "exclude": ["node_modules", "dist"]
+  "include": [
+    "src",
+    ".next/types/**/*.ts"
+, "app/page.tsx"  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
 }

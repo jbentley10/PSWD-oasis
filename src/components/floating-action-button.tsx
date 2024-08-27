@@ -1,4 +1,3 @@
-"use client";
 /**
  * @file floating-action-button.tsx
  */

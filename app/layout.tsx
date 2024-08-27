@@ -1,7 +1,6 @@
 /**
  * @file layout.tsx
  */
-"use client";
 
 // Import styles
 import "../src/globals.css";
@@ -10,9 +9,9 @@ import "../src/globals.css";
 import React from "react";
 
 // Import components and utils
-import Navigation from "@/src/components/navigation";
-import Footer from "@/src/components/footer";
-import { Providers } from "./providers";
+import { Navigation } from "../src/components/navigation";
+import { Footer } from "../src/components/footer";
+import ThemeProvider from "../src/lib/theme-provider";
 
 export default function RootLayout({
   children,
@@ -22,11 +21,16 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body>
-        <Providers>
+        <ThemeProvider
+          attribute='class'
+          defaultTheme='system'
+          enableSystem
+          disableTransitionOnChange
+        >
           <Navigation />
           {children}
           <Footer />
-        </Providers>
+        </ThemeProvider>
       </body>
     </html>
   );

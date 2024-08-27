@@ -1,7 +1,6 @@
 /**
  * @file locale-provider.ts
  */
-"use client";
 
 import React, { createContext, useContext } from "react";
 

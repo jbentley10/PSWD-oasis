@@ -1,5 +1,4 @@
 // app/providers.tsx
-"use client";
 
 import React from "react";
 import ThemeProvider from "../src/lib/theme-provider";
